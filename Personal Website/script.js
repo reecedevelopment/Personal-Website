@@ -76,7 +76,7 @@ $(document).ready(function() {
 	
 		event.preventDefault();
 		
-		if ( $(this).hasClass("isDown") ) {
+		if ( !$(this).hasClass("isUp") ) {
 		
 			$(this).css("background-color", "#56788D");
 		
@@ -230,7 +230,7 @@ $(document).ready(function() {
 			
 		}
 		
-		$(this).toggleClass("isDown");
+		$(this).toggleClass("isUp");
 		
 		return false;
 		
@@ -240,7 +240,7 @@ $(document).ready(function() {
 	
 		event.preventDefault();
 		
-		if ( $(this).hasClass("isDown") ) {
+		if ( !$(this).hasClass("isUp") ) {
 		
 			$(this).css("background-color", "#56788D");
 		
@@ -370,7 +370,7 @@ $(document).ready(function() {
 			
 		}
 		
-		$(this).toggleClass("isDown");
+		$(this).toggleClass("isUp");
 		
 		return false;
 	});
@@ -379,7 +379,7 @@ $(document).ready(function() {
 	
 		event.preventDefault();
 		
-		if ( $(this).hasClass("isDown") ) {
+		if ( !$(this).hasClass("isUp") ) {
 		
 			$(this).css("background-color", "#56788D");
 		
@@ -515,7 +515,7 @@ $(document).ready(function() {
 			
 		}
 		
-		$(this).toggleClass("isDown");
+		$(this).toggleClass("isUp");
 		
 		return false;
 		
@@ -525,7 +525,7 @@ $(document).ready(function() {
 	
 		event.preventDefault();
 		
-		if ( $(this).hasClass("isDown") ) {
+		if ( !$(this).hasClass("isUp") ) {
 		
 			$(this).css("background-color", "#56788D");
 	
@@ -577,7 +577,7 @@ $(document).ready(function() {
 			
 		}
 		
-		$(this).toggleClass("isDown");
+		$(this).toggleClass("isUp");
 		
 		return false;
 		
