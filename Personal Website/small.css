@@ -1,0 +1,769 @@
+/*
+   Author: Zachary Reece
+   Version: 11/14/2016
+   Filename: stylesheet.css
+   Description: The styelsheet for my personal website 
+*/
+
+@font-face{
+    font-family: "Qontra";
+    src: url('Qontra.otf');
+}
+
+body {
+   /* sets the background color of the whole site to a nice off whiteish color, and sets the font to a cool custom font */
+   font-family: Qontra;
+   background-color: #B1C2CC;
+   text-align: center;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   
+}
+
+#stripe1 {
+   
+   position: absolute;
+   top: 0%;
+   left: 85%;
+   width: .75%;
+   height: 100%;
+   background-color: #355D74;
+   
+}
+
+#stripe2 {
+   
+   position: absolute;
+   top: 0%;
+   left: 86.7%;
+   width: 4.2%;
+   height: 100%;
+   background-color: #355D74;
+   
+}
+
+#stripe3 {
+   
+   position: absolute;
+   top: 0%;
+   left: 92%;
+   width: 2.5%;
+   height: 100%;
+   background-color: #355D74;
+   
+}
+
+#stripe4 {
+   
+   position: absolute;
+   top: 90%;
+   left: 0%;
+   width: 100%;
+   height: .5%;
+   background-color: #355D74;
+   
+}
+
+#stripe5 {
+   
+   position: absolute;
+   top: 91%;
+   left: 0%;
+   width: 100%;
+   height: 3.1%;
+   background-color: #355D74;
+   
+}
+
+#stripe6 {
+   
+   position: absolute;
+   top: 94.9%;
+   left: 0%;
+   width: 100%;
+   height: 1.2%;
+   background-color: #355D74;
+   
+}
+
+#welcome{
+
+   font-size: 15vw;
+   color: #1E465D;
+   /* constrains div and makes it always stay in the center of the page even if it's resized */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
+
+#iAm {
+   
+   font-size: 10vw;
+   color: #1E465D;
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+   display: none;
+   float: left;
+   animation: iAmAnimation 3s ease 2s 1 normal forwards;
+   
+}
+
+@keyframes iAmAnimation {
+   
+   0% {left: 20%;
+       top: 50%;}
+   100% {left: -10%;
+         top: 30%;}
+   
+}
+
+#ZR {
+   
+   font-size: 10vw;
+   color: #1E465D;
+   position: absolute;
+   width: 5.5em;
+   top: 50%;
+   left: 55%;
+   transform: translate(-50%, -50%);
+   display: none;
+   float: left;
+   animation: ZRAnimation 2s ease 2s 1 normal forwards;
+}
+
+@keyframes ZRAnimation {
+   
+   0% {left: 55%;
+       top: 50%;}
+   100% {left: 44%;
+         top: 5%;}
+   
+}
+
+#container {
+   
+   position: absolute;
+   top: 0%;
+   left: -5%;
+   width: 75%;
+   height: 100%;
+   
+}
+
+#work {
+   
+   overflow: hidden;
+   font-size: 4vw;
+   color: #DCE4E8;
+   width: 100%;
+   height: 17%;
+   border-radius: 2.5%;
+   position: relative;
+   top: 14%;
+   left: 13.2%;
+   background-color: #56788D;
+   text-align: center;
+   display: none;
+   
+}
+
+#education {
+   
+   overflow: hidden;
+   font-size: 4vw;
+   color: #DCE4E8;
+   width: 100%;
+   height: 17%;
+   border-radius: 2.5%;
+   position: relative;
+   top: 35%;
+   left: 13.2%;
+   background-color: #56788D;
+   text-align: center;
+   display: none;
+   
+}
+
+#skills {
+   
+   overflow: hidden;
+   font-size: 4vw;
+   color: #DCE4E8;
+   width: 100%;
+   height: 17%;
+   border-radius: 2.5%;
+   position: relative;
+   top: -1%;
+   left: 13.2%;
+   background-color: #56788D;
+   text-align: center;
+   display: none;
+   
+}
+
+#aboutme {
+   
+   overflow: hidden;
+   font-size: 4vw;
+   color: #DCE4E8;
+   width: 100%;
+   height: 17%;
+   border-radius: 2.5%;
+   position: relative;
+   top: 20%;
+   left: 13.2%;
+   background-color: #56788D;
+   text-align: center;
+   display: none;
+   
+}
+
+.buttonlabel {
+   
+   text-align: center;
+   color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 2em;
+   transform: translate(-50%, -50%);
+   
+}
+
+#pic {
+
+   position: relative;
+   border-radius: 2.5%;
+   width: 50%;
+   height: 45%;
+   background-image: url("pictures/me.jpg");
+   background-size:  115% 135%;
+   display: none;
+   top: 5%;
+   left: 25%;
+   
+}
+
+#aboutmeparagraph {
+   
+   position: relative;
+   font-size: 2.75vw;
+   text-align: center;
+   border-radius: 2.5%;
+   top: 7%;
+   left: 5%;
+   height: 95%;
+   width: 90%;
+   display: none;
+   float: left;
+   
+}
+
+#contactme {
+   
+   top: 95%;
+   left: 30%;
+   position: absolute;
+   font-size: 2.5vw;
+   text-align: left;
+   width: 50%;
+   height: 10%;
+   display: none;
+   float: left;
+   color: #1E465D;
+   z-index: 1;
+   
+}
+
+#arbys {
+   
+   top: 3%;
+   left: 3%;
+   position: absolute;
+   background-image: url("pictures/Arbys Logo.png");
+   width: 23%;
+   height: 13%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#walgreens {
+   
+   top: 23%;
+   left: 74%;
+   position: absolute;
+   background-image: url("pictures/Walgreens Logo.png");
+   width: 23%;
+   height: 13%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#fhsu_work {
+   
+   top: 70%;
+   left: 74%;
+   position: absolute;
+   background-image: url("pictures/FHSU Logo.png");
+   width: 23%;
+   height: 13%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#mcdonalds {
+   
+   top: 40%;
+   left: 3%;
+   position: absolute;
+   background-image: url("pictures/McDonalds Logo.png");
+   height: 13%;
+   width: 23%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#arbysDescription {
+   
+   font-size: 3vw;
+   color: #DCE4E8;
+   top: 5%;
+   left: 28%;
+   position: absolute;
+   display: none;
+   width: 65%;
+   height: 10%;
+   
+}
+
+#walgreensDescription {
+   
+   font-size: 3vw;
+   color: #DCE4E8;
+   top: 25%;
+   left: 3%;
+   position: absolute;
+   display: none;
+   width: 65%;
+   height: 10%;
+   
+}
+
+#mcdonaldsDescription {
+   
+   font-size: 3vw;
+   color: #DCE4E8;
+   top: 41%;
+   left: 30%;
+   position: absolute;
+   display: none;
+   width: 65%;
+   height: 10%;
+   
+}
+
+#FHSUWorkDescription {
+   
+   font-size: 3vw;
+   color: #DCE4E8;
+   top: 57%;
+   left: 3%;
+   position: absolute;
+   display: none;
+   width: 65%;
+   height: 10%;
+   
+}
+
+#arbys:hover ~ #timeline {
+   
+   background-image: url("pictures/beginningHighlight.png")
+   
+}
+
+#walgreens:hover ~ #timeline {
+   
+   background-image: url("pictures/beginningHighlight.png")
+   
+}
+
+#mcdonalds:hover ~ #timeline {
+   
+   background-image: url("pictures/endingHighlight.png")
+   
+}
+
+#fhsu_work:hover ~ #timeline {
+   
+   background-image: url("pictures/endingMiddleHighlight.png")
+   
+}
+
+#derby {
+   
+   top: 5%;
+   left: 8%;
+   position: absolute;
+   background-image: url("pictures/Derby Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#butler {
+   
+   top: 40%;
+   left: 60%;
+   position: absolute;
+   background-image: url("pictures/Butler Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#fhsu_education {
+
+   top: 75%;
+   left: 8%;
+   position: absolute;
+   background-image: url("pictures/FHSU Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#educationNameDerby {
+   
+   top: 1%;
+   left: -6%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 50%;
+   height: 20%;
+   
+}
+
+#educationNameButler {
+   
+   top: 35%;
+   left: 45%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 50%;
+   height: 20%;
+   
+}
+
+#educationNameFHSU {
+   
+   top: 90%;
+   left: 1%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 50%;
+   height: 20%;
+   
+}
+
+#educationInfoDerby {
+   
+   top: 23%;
+   left: 4%;
+   position: absolute;
+   background-image: url("pictures/Derby Education Block.png");
+   width: 33%;
+   height: 22%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#educationInfoButler {
+   
+   top: 57%;
+   left: 58%;
+   position: absolute;
+   background-image: url("pictures/Butler Education Block.png");
+   width: 30%;
+   height: 13%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#educationInfoFHSU {
+   
+   top: 61%;
+   left: 6%;
+   position: absolute;
+   background-image: url("pictures/FHSU Education Block.png");
+   width: 30%;
+   height: 13%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#educationPhoneDerby {
+   
+   color: #1E465D;
+   top: 13%;
+   left: 39.5%;
+   position: absolute;
+   width: 50%;
+   height: 25%;
+   display: none;
+   
+}
+
+#educationPhoneButler {
+   
+   color: #1E465D;
+   top: 56%;
+   left: 20%;
+   position: absolute;
+   width: 40%;
+   height: 25%;
+   display: none;
+   
+}
+
+#educationPhoneFHSU {
+   
+   color: #1E465D;
+   top: 83%;
+   left: 30%;
+   position: absolute;
+   width: 50%;
+   height: 25%;
+   display: none;
+   
+}
+
+#educationAddressDerby {
+   
+   color: #1E465D;
+   top: 5%;
+   left: 45%;
+   position: absolute;
+   width: 40%;
+   height: 25%;
+   display: none;
+   
+}
+
+#educationAddressButler {
+   
+   color: #1E465D;
+   top: 48%;
+   left: 20%;
+   position: absolute;
+   width: 40%;
+   height: 25%;
+   display: none;
+   
+}
+
+#educationAddressFHSU {
+   
+   color: #1E465D;
+   top: 75%;
+   left: 35%;
+   position: absolute;
+   width: 40%;
+   height: 25%;
+   display: none;
+   
+}
+
+#jquery {
+   
+   top: 5%;
+   left: 3%;
+   position: absolute;
+   background-image: url("pictures/jQuery Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#jqueryDescription {
+   
+   top: 10%;
+   left: 27%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}
+
+#css {
+   
+   top: 35%;
+   left: 3%;
+   position: absolute;
+   background-image: url("pictures/CSS Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#cssDescription {
+   
+   top: 40%;
+   left: 25%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}
+
+#html {
+   
+   top: 72%;
+   left: 3%;
+   position: absolute;
+   background-image: url("pictures/HTML Logo.png");
+   width: 23%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#htmlDescription {
+   
+   top: 76%;
+   left: 27%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}
+
+#photoshop {
+   
+   top: 53%;
+   left: 72%;
+   position: absolute;
+   background-image: url("pictures/Photoshop Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#photoshopDescription {
+   
+   top: 58%;
+   left: 20%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}
+
+#python {
+   
+   top: 18%;
+   left: 72%;
+   position: absolute;
+   background-image: url("pictures/Python Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#pythonDescription {
+   
+   top: 23%;
+   left: 15%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}
+
+#javascript {
+   
+   top: 82%;
+   left: 72%;
+   position: absolute;
+   background-image: url("pictures/JavaScript Logo.png");
+   width: 25%;
+   height: 15%;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: none;
+   
+}
+
+#javascriptDescription {
+   
+   top: 87%;
+   left: 20%;
+   color: #DCE4E8;
+   position: absolute;
+   font-size: 4vw;
+   display: none;
+   width: 10em;
+   height: 1em;
+   
+}

@@ -8,6 +8,31 @@
 // Calls functions below once page is loaded; each function runs on a timer after one another; fades text in and out
 $(document).ready(function() {
 
+	function adjustStyle(width) {
+	    
+	    width = parseInt(width);
+	    
+	    if (width < 1300) {
+	    
+	         document.location = "mobile.html";
+	         
+	    } else {
+	        
+	    }
+	}
+
+	$(function() {
+
+	    adjustStyle($(this).width());
+	    
+	    $(window).resize(function() {
+	    
+	        adjustStyle($(this).width());
+	        
+	    });
+	    
+	});
+
 	document.getElementById("work").onmouseover = function() {
 	
 		this.style.backgroundColor = "#7F99A8";
@@ -82,9 +107,9 @@ $(document).ready(function() {
 		
 			document.getElementById("arbys").onmouseover = function() {
 				
-				$("#workDescriptions").stop().text("Crew Member; Operated Cash Registers and Took Orders; Bagged and Shuttled Food");
+				$("#workDescriptions").stop().text("Arbys; 640 N Rock Rd, Derby, KS 67037; (316) 788-2170; Crew Member; Operated Cash Registers and Took Orders; Bagged and Shuttled Food");
 				
-				$("workDescriptions").stop().css("left", "5%");
+				$("workDescriptions").stop().css("left", "0%");
 				
 				$('#workDescriptions').stop().fadeIn("slow", function() {});
 				
@@ -102,9 +127,9 @@ $(document).ready(function() {
 			
 			document.getElementById("walgreens").onmouseover = function() {
 				
-				$("#workDescriptions").stop().text("Customer Service Associate; Operated Cash Register; Stocked and Faced Merchandise");
+				$("#workDescriptions").stop().text("Walgreens; 458 N Baltimore Ave, Derby, KS 67037; (316) 788-4317; Customer Service Associate; Operated Cash Register; Stocked and Faced Merchandise");
 				
-				$("#workDescriptions").css("left", "15%");
+				$("#workDescriptions").css("left", "1%");
 				
 				$('#workDescriptions').stop().fadeIn("slow", function() {});
 				
@@ -114,7 +139,7 @@ $(document).ready(function() {
 				
 				$("#workDescriptions").stop().text("");
 				
-				$("#workDescriptions").css("left", "16%");
+				$("#workDescriptions").css("left", "0%");
 				
 				$('#workDescriptions').stop().fadeOut("slow", function() {});
 				
@@ -122,9 +147,9 @@ $(document).ready(function() {
 			
 			document.getElementById("mcdonalds").onmouseover = function() {
 				
-				$("#workDescriptions").stop().text("Crew Member; Operates Cash Registers and Takes Orders; Bags and Shuttles Food");
+				$("#workDescriptions").stop().text(" McDonalds; 610 N Rock Rd, Derby, KS 67037; (316) 788-1779; Crew Member; Operates Cash Registers and Takes Orders; Bags and Shuttles Food");
 				
-				$("workDescriptions").stop().css("left", "5%");
+				$("workDescriptions").stop().css("left", "-100%");
 				
 				$('#workDescriptions').stop().fadeIn("slow", function() {});
 				
@@ -134,7 +159,7 @@ $(document).ready(function() {
 				
 				$("#workDescriptions").stop().text("");
 				
-				$("workDescriptions").stop().css("left", "16%");
+				$("workDescriptions").stop().css("left", "0%");
 				
 				$('#workDescriptions').stop().fadeOut("slow", function() {});
 				
@@ -142,9 +167,9 @@ $(document).ready(function() {
 			
 			document.getElementById("fhsu_work").onmouseover = function() {
 				
-				$("#workDescriptions").stop().text("President and Founder of KAMS/Honors College Executive Council; I founded this organization and wrote its constitution at the request of the Director of the Kansas Academy of Mathematics and Science, and the Director of the FHSU Honors College. The KHCECs primary goal is to design academic and social programming to bring together the two student bodies of high-achieving students at FHSU to facilitate comradery and collaboration. From the first year at three members, it grew to 12 students by the second year");
+				$("#workDescriptions").stop().text("President and Founder of KAMS/Honors College Executive Council; I founded this organization and wrote its constitution at the request of the Director of the Kansas Academy of Mathematics and Science, and the Director of the Fort Hays State University Honors College. The KHCECs primary goal is to design academic and social programming to bring together the two student bodies of high-achieving students at FHSU to facilitate comradery and collaboration. From the first year at three members, it grew to 12 students by the second year");
             									 
-            		$("#workDescriptions").css("left", "3%");
+            		$("#workDescriptions").css("left", "0%");
             		
             		$("#workDescriptions").css("top", "38%");
             		
@@ -158,9 +183,9 @@ $(document).ready(function() {
 				
 				$("#workDescriptions").stop().text("");
 				
-				$("#workDescriptions").css("left", "16%");
+				$("#workDescriptions").css("left", "0%");
 				
-				$("#workDescriptions").css("top", "50%");
+				$("#workDescriptions").css("top", "45%");
 				
 				$("#workDescriptions").css("font-size", "1vw");
 				
